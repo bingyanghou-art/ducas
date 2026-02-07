@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: public-pool
+id: pp
 category: bitcoin
 name: Public Pool
 version: "3c1289c"
