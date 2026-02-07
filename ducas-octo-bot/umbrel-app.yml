@@ -1,23 +1,23 @@
 manifestVersion: 1
 id: ducas-octo-bot
-name: Freqtrade
+name: Octo Bot
 tagline: Automated crypto trading system
-icon: https://www.freqtrade.io/en/stable/images/logo.png
+icon: octobot-logo-light.png
 category: Finance
-version: "2026.1"
-port: 8080
+version: "2.0"
+port: 80:5001
 description: >-
   Open source bot for backtesting and trading crypto strategies.
 
-developer: Freqtrade Team
-website: https://www.freqtrade.io
+developer: Octobot Team
+website: https://www.octobot.cloud
 submitter: ducas
 submission: https://github.dev/bingyanghou-art/ducas
-repo: https://github.com/freqtrade/freqtrade
-support: https://github.com/freqtrade/freqtrade/discussions
+repo: https://github.com/Drakkar-Software/OctoBot
+support: https://github.com/Drakkar-Software/OctoBot/discussions
 gallery:
-  - https://raw.githubusercontent.com/freqtrade/freqtrade/develop/docs/assets/freqtrade_poweredby.svg
-  - https://raw.githubusercontent.com/freqtrade/freqtrade/develop/docs/assets/freqtrade-screenshot.png
+  - https://github.com/Drakkar-Software/OctoBot/raw/assets/backtesting_report.jpg
+  - https://github.com/Drakkar-Software/OctoBot/raw/assets/octobot-free-open-source-trading-bot-web-user-interface-showcase.gif
 releaseNotes: >-
  Initial release for Umbrel
 dependencies: []
