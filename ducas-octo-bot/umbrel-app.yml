@@ -2,7 +2,7 @@ manifestVersion: 1
 id: ducas-octo-bot
 name: Octo Bot
 tagline: Automated crypto trading system
-icon: https://github.com/bingyanghou-art/ducas/blob/master/ducas-octo-bot/octobot-logo-light.png
+icon: https://styles.redditmedia.com/t5_76phsn/styles/communityIcon_cqy5q8ymv6pd1.png?width=128&frame=1&auto=webp&s=427fe1c7ed0cd07e671cd815462eae7ce577a7e0
 category: Finance
 version: "2.0"
 port: 5001
