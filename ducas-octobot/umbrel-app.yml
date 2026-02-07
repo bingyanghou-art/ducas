@@ -1,15 +1,14 @@
 manifestVersion: 1
-id: ducas-octo-bot
-name: Octo Bot
+id: ducas-octobot
+name: OctoBot
 tagline: Automated crypto trading system
 icon: https://styles.redditmedia.com/t5_76phsn/styles/communityIcon_cqy5q8ymv6pd1.png?width=128&frame=1&auto=webp&s=427fe1c7ed0cd07e671cd815462eae7ce577a7e0
 category: Finance
 version: "2.0"
 port: 5001
 description: >-
-  Open source bot for backtesting and trading crypto strategies.
-
-developer: Octobot Team
+  Open-source trading bot for automated strategies, backtesting, and live trading on exchanges.
+developer: Drakkar Software
 website: https://www.octobot.cloud
 submitter: ducas
 submission: https://github.dev/bingyanghou-art/ducas
