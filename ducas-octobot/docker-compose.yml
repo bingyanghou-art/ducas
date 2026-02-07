@@ -1,25 +1,27 @@
-version: "3.7"
+version: '3.7'
 services:
   app_proxy:
     environment:
-      APP_HOST: octobot_server_1
+      APP_HOST: mateosilguero-octobot_octobot_1
       APP_PORT: 5001
+      PROXY_AUTH_ADD: 'true'
+    container_name: mateosilguero-octobot_app_proxy_1
 
-  server:
-    image: ghcr.io/drakkarsoftware/octobot:stable
-    restart: on-failure
-    stop_grace_period: 1m
+  octobot:
+    image: drakkarsoftware/octobot:2.0.16@sha256:9a3f6cd8f13ec34b86a35b30ed7efc58d39485306a36f51bf06df69bf6652ccb
     volumes:
-      - ${APP_DATA_DIR}/logs:/octobot/logs
-      - ${APP_DATA_DIR}/backtesting:/octobot/backtesting
-      - ${APP_DATA_DIR}/tentacles:/octobot/tentacles
-      - ${APP_DATA_DIR}/user:/octobot/user
-    ports:
-      - "80:5001"
+      - ${APP_DATA_DIR}/data/logs:/octobot/logs
+      - ${APP_DATA_DIR}/data/backtesting:/octobot/backtesting
+      - ${APP_DATA_DIR}/data/tentacles:/octobot/tentacles
+      - ${APP_DATA_DIR}/data/user:/octobot/user
+    restart: always
+    expose:
+      - 5001
+    container_name: mateosilguero-octobot_octobot_1
 
   watchtower:
     image: containrrr/watchtower
-    restart: on-failure
+    restart: always
     command: --cleanup --include-restarting
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

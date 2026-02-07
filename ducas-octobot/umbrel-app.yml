@@ -1,24 +1,24 @@
 manifestVersion: 1
 id: ducas-octobot
+category: finance
 name: OctoBot
-tagline: Automated crypto trading system
-icon: https://styles.redditmedia.com/t5_76phsn/styles/communityIcon_cqy5q8ymv6pd1.png?width=128&frame=1&auto=webp&s=427fe1c7ed0cd07e671cd815462eae7ce577a7e0
-category: Finance
-version: "2.0"
-port: 5001
+icon: https://pbs.twimg.com/profile_images/1735303459807641600/YpotDJ1S_400x400.jpg
+version: "2.0.8"
+tagline: Octobot
 description: >-
-  Open-source trading bot for automated strategies, backtesting, and live trading on exchanges.
-developer: Drakkar Software
-website: https://www.octobot.cloud
-submitter: ducas
-submission: https://github.dev/bingyanghou-art/ducas
-repo: https://github.com/Drakkar-Software/OctoBot
-support: https://github.com/Drakkar-Software/OctoBot/discussions
+  Crypto trade bot
+releaseNotes: ""
+developer: Drakkar-software
+website: https://github.com/Drakkar-software/OctoBot
+repo: https://github.com/Drakkar-software/OctoBot
+support: https://github.com/Drakkar-software/OctoBot/issues
+port: 5005
+submitter: Mateo Silguero
+submission: https://github.com/getumbrel/umbrel-apps/pull/755
 gallery:
-  - https://github.com/Drakkar-Software/OctoBot/raw/assets/backtesting_report.jpg
-  - https://github.com/Drakkar-Software/OctoBot/raw/assets/octobot-free-open-source-trading-bot-web-user-interface-showcase.gif
-releaseNotes: >-
- Initial release for Umbrel
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
 dependencies: []
 path: ""
 defaultUsername: ""
