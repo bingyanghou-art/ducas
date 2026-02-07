@@ -2,10 +2,10 @@ manifestVersion: 1
 id: ducas-octo-bot
 name: Octo Bot
 tagline: Automated crypto trading system
-icon: octobot-logo-light.png
+icon: https://github.com/bingyanghou-art/ducas/blob/master/ducas-octo-bot/octobot-logo-light.png
 category: Finance
 version: "2.0"
-port: 80:5001
+port: 5001
 description: >-
   Open source bot for backtesting and trading crypto strategies.
 
