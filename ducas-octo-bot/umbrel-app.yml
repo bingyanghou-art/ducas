@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: ducas-octo-bot
+name: Freqtrade
+tagline: Automated crypto trading system
+icon: https://www.freqtrade.io/en/stable/images/logo.png
+category: Finance
+version: "2026.1"
+port: 8080
+description: >-
+  Open source bot for backtesting and trading crypto strategies.
+
+developer: Freqtrade Team
+website: https://www.freqtrade.io
+submitter: ducas
+submission: https://github.dev/bingyanghou-art/ducas
+repo: https://github.com/freqtrade/freqtrade
+support: https://github.com/freqtrade/freqtrade/discussions
+gallery:
+  - https://raw.githubusercontent.com/freqtrade/freqtrade/develop/docs/assets/freqtrade_poweredby.svg
+  - https://raw.githubusercontent.com/freqtrade/freqtrade/develop/docs/assets/freqtrade-screenshot.png
+releaseNotes: >-
+ Initial release for Umbrel
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
