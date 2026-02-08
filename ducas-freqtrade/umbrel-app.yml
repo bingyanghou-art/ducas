@@ -3,7 +3,7 @@ id: ducas-freqtrade
 name: Freqtrade
 tagline: Automated crypto trading system
 icon: https://www.freqtrade.io/en/stable/images/logo.png
-category: category: finance
+category: finance
 version: "2026.1"
 port: 8080
 description: >-
