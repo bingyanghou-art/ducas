@@ -5,7 +5,7 @@ tagline: Replace this tagline with your app's tagline
 icon: https://image.nostr.build/1c49e9856699d282755934e0d9013ae18bfb86c48611a8ce1cf8e0cf36737aa5.jpg
 category: Development
 version: "1.0.0"
-port: 4004
+port: 4000
 description: >-
   Add your app's description here.
 
