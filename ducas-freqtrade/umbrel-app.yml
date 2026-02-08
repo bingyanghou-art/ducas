@@ -8,11 +8,10 @@ version: "2026.1"
 port: 8080
 description: >-
   Open source bot for backtesting and trading crypto strategies.
-
 developer: Freqtrade Team
 website: https://www.freqtrade.io
-submitter: ducas
-submission: https://github.dev/bingyanghou-art/ducas
+submitter: Ducas
+submission: 
 repo: https://github.com/freqtrade/freqtrade
 support: https://github.com/freqtrade/freqtrade/discussions
 gallery:

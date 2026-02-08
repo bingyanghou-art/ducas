@@ -2,14 +2,18 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: freqtrade_server_1
+      APP_HOST: ducas-freqtrade_server_1
       APP_PORT: 8080
   server:
-    image: ghcr.io/freqtrade/freqtrade:stable
-    restart: unless-stopped
-    stop_grace_period: 1m
+    image: freqtradeorg/freqtrade:stable
+    restart: always
     volumes:
-      - ${APP_DATA_DIR}/data:/freqtrade/user_data
+      - ${APP_DATA_DIR}/user_data:/freqtrade/user_data
     ports:
-      - "8080:8080"
-    command: trade --strategy SampleStrategy
+      - 8080
+    command: >
+      trade
+      --logfile /freqtrade/user_data/logs/freqtrade.log
+      --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
+      --config /freqtrade/user_data/config.json
+      --strategy SampleStrategy
