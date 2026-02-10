@@ -9,7 +9,7 @@ services:
 
   server:
     image: freqtradeorg/freqtrade:stable
-    restart: always
+    restart: unless-stopped
     volumes:
       - ${APP_DATA_DIR}/user_data:/freqtrade/user_data
     expose:
