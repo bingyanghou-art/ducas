@@ -5,7 +5,7 @@ services:
       APP_HOST: ducas-freqtrade_server_1
       APP_PORT: 8080
       PROXY_AUTH_ADD: 'true'
-  container_name: ducas-freqtrade_app_proxy_1
+    container_name: ducas-freqtrade_app_proxy_1
 
   server:
     image: freqtradeorg/freqtrade:stable
