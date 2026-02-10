@@ -1,10 +1,10 @@
 manifestVersion: 1
-id: ducas-freqtrade
-name: Freqtrade
-tagline: Automated crypto trading system
+id: ducas-TradingView-Free-Webhook-Alerts
+name: TradingView-Free-Webhook-Alerts
+tagline: 
 icon: https://www.freqtrade.io/en/stable/images/logo.png
 category: finance
-version: "2026.1"
+version: "1"
 port: 8080
 description: >-
   Open source bot for backtesting and trading crypto strategies.
