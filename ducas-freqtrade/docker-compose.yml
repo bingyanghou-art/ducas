@@ -3,7 +3,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: ducas-freqtrade_server_1
-      APP_PORT: 8080
+      APP_PORT: 8081
       PROXY_AUTH_ADD: 'true'
     container_name: ducas-freqtrade_app_proxy_1
 
@@ -13,7 +13,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/user_data:/freqtrade/user_data
     expose:
-      - 8080
+      - 8081
     container_name: ducas-freqtrade_server_1
     command: >
       trade
