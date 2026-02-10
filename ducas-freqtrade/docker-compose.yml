@@ -13,7 +13,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/user_data:/freqtrade/user_data
     expose:
-      - 8080
+      - 8080:8080
     container_name: ducas-freqtrade_server_1
     command: >
       trade
