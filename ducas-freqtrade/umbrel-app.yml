@@ -1,24 +1,33 @@
 manifestVersion: 1
 id: ducas-freqtrade
 name: Freqtrade
-tagline: Automated crypto trading system
+tagline: Free, open source crypto trading bot
 icon: https://www.freqtrade.io/en/stable/images/logo.png
 category: finance
 version: "2026.1"
 port: 8080
 description: >-
-  Open source bot for backtesting and trading crypto strategies.
+  Freqtrade is a free and open source crypto trading bot written in Python. It is designed to support all major exchanges and be controlled via Telegram or webUI. It contains backtesting, plotting and money management tools as well as strategy optimization by machine learning.
 developer: Freqtrade Team
 website: https://www.freqtrade.io
-submitter: Ducas
+submitter: 
 submission: 
 repo: https://github.com/freqtrade/freqtrade
-support: https://github.com/freqtrade/freqtrade/discussions
+support: https://discord.gg/p7nuUNVfP7
 gallery:
   - https://raw.githubusercontent.com/freqtrade/freqtrade/develop/docs/assets/freqtrade_poweredby.svg
   - https://raw.githubusercontent.com/freqtrade/freqtrade/develop/docs/assets/freqtrade-screenshot.png
 releaseNotes: >-
- Initial release for Umbrel
+ Add support for hyperliquid‘s HIP3 markets.
+ Improved handling of non-english characters in strategy files.
+ Improved Telegram balance output formatting.
+ Improved Balance reporting for futures trades (includes profit/loss in the balance now).
+ Update docker base image from debian bookworm to trixie.
+ Removed binance futures pair name migration.
+ freqUI:
+ Additional live metrics (CAGR, Calmar, Sortino, Sharpe, SQN).
+ Support Point style annotations.
+ Add “At Risk” field to Trade Detail pane.
 dependencies: []
 path: ""
 defaultUsername: ""
