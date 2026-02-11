@@ -1,7 +1,12 @@
-from freqtrade.strategy import IStrategy
+import numpy as np
+import pandas as pd
+from datetime import datetime, timedelta, timezone
 from pandas import DataFrame
+from typing import Optional, Union
+from freqtrade.strategy import IStrategy
+
 import talib.abstract as ta
-import freqtrade.vendor.qtpylib.indicators as qtpylib
+from technical import qtpylib
 
 class RsiVolumeStrategy(IStrategy):
     """
@@ -15,7 +20,7 @@ class RsiVolumeStrategy(IStrategy):
     INTERFACE_VERSION = 3
 
     # Strategy parameters
-    timeframe = '4h'
+    timeframe = '5m'
     startup_candle_count: int = 10  # For RSI(10) and rolling(10)
 
     # Stoploss
