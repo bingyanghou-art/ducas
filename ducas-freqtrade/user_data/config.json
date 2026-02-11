@@ -4,13 +4,17 @@
     "max_open_trades": 1,
     "stake_currency": "USDT",
     "stake_amount": "unlimited",
+
     "tradable_balance_ratio": 0.99,
     "fiat_display_currency": "USD",
+
     "dry_run": true,
     "dry_run_wallet": 1000,
-    "cancel_open_orders_on_exit": true,
+
+    "cancel_open_orders_on_exit": false,
     "trading_mode": "spot",
     "margin_mode": "",
+
     "unfilledtimeout": {
         "entry": 10,
         "exit": 10,
@@ -33,31 +37,70 @@
         "order_book_top": 1
     },
     "exchange": {
-        "name": "binance",
+        "name": "okx",
         "key": "",
         "secret": "",
+        "password": "",
+        "uid": "",
         "ccxt_config": {},
         "ccxt_async_config": {},
         "pair_whitelist": [
+            "BTC/USDT"
         ],
         "pair_blacklist": [
-            "BNB/.*"
         ]
     },
     "pairlists": [
         {
-            "method": "VolumePairList",
-            "number_assets": 20,
-            "sort_key": "quoteVolume",
-            "min_value": 0,
-            "refresh_period": 1800
+            "method": "StaticPairList"
         }
     ],
     "telegram": {
-        "enabled": false,
-        "token": "",
-        "chat_id": ""
+        "enabled": true,
+        "token": "8579605109:AAG1zYNKJQv-uXoGmYqi9-JTO0BRY8LmUuA",
+        "chat_id": "8157612451"
     },
+    "webhook": {
+        "enabled": true,
+        "url": "https://wtalerts.com/bot/other",
+        "entry": {
+            "value0": "ENTER-LONG_Binance_BTCUSDT_BOT-NAME-NBs1hG_4H_72f0e0e473869bfdb74ca751",
+            "value1": "Buying {pair}",
+            "value2": "limit {limit:8f}",
+            "value3": "{stake_amount:8f} {stake_currency}"
+        },
+        "entry_cancel": {
+            "value1": "Cancelling Open Buy Order for {pair}",
+            "value2": "limit {limit:8f}",
+            "value3": "{stake_amount:8f} {stake_currency}"
+        },
+         "entry_fill": {
+            "value1": "Buy Order for {pair} filled",
+            "value2": "at {open_rate:8f}",
+            "value3": ""
+        },
+        "exit": {
+            "value1": "Exiting {pair}",
+            "value2": "limit {limit:8f}",
+            "value3": "profit: {profit_amount:8f} {stake_currency} ({profit_ratio})"
+        },
+        "exit_cancel": {
+            "value1": "Cancelling Open Exit Order for {pair}",
+            "value2": "limit {limit:8f}",
+            "value3": "profit: {profit_amount:8f} {stake_currency} ({profit_ratio})"
+        },
+        "exit_fill": {
+            "value1": "Exit Order for {pair} filled",
+            "value2": "at {close_rate:8f}.",
+            "value3": ""
+        },
+        "status": {
+            "value1": "Status: {status}",
+            "value2": "",
+            "value3": ""
+        }
+    },
+
     "api_server": {
         "enabled": true,
         "listen_ip_address": "0.0.0.0",
@@ -71,7 +114,7 @@
         "password": "790808"
     },
     "bot_name": "freqtrade",
-    "initial_state": "running",
+    "initial_state": "stopped",
     "force_entry_enable": false,
     "internals": {
         "process_throttle_secs": 5
