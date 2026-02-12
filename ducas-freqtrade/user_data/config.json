@@ -57,14 +57,14 @@
     ],
     "telegram": {
         "enabled": true,
-        "token": "8579605109:AAG1zYNKJQv-uXoGmYqi9-JTO0BRY8LmUuA",
-        "chat_id": "8157612451"
+        "token": "",
+        "chat_id": ""
     },
     "webhook": {
         "enabled": true,
-        "url": "https://wtalerts.com/bot/other",
+        "url": "",
         "entry": {
-            "value0": "ENTER-LONG_Binance_BTCUSDT_BOT-NAME-NBs1hG_4H_72f0e0e473869bfdb74ca751"
+            "value0": ""
         }
     },
 
@@ -78,9 +78,9 @@
         "ws_token": "AVhXMjFezcIGy8yUg3YiaNHILp7RRAeQ1w",
         "CORS_origins": [],
         "username": "freqtrader",
-        "password": "790808"
+        "password": ""
     },
-    "bot_name": "freqtrade",
+    "bot_name": "test",
     "initial_state": "stopped",
     "force_entry_enable": false,
     "internals": {
