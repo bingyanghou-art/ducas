@@ -2,13 +2,12 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: ducas-hummingbot_gateway_1
+      APP_HOST: ducas-hummingbot_hummingbot_1
       APP_PORT: 15888
       PROXY_AUTH_ADD: 'true'
     container_name: ducas-hummingbot_app_proxy_1
 
   hummingbot:
-    container_name: hummingbot
     image: hummingbot/hummingbot:latest
     volumes:
       - ${APP_DATA_DIR}/conf:/home/hummingbot/conf
@@ -33,7 +32,6 @@ services:
   gateway:
    profiles: ["gateway"]
    restart: always
-   container_name: ducas-hummingbot_gateway_1
    image: hummingbot/gateway:latest
    ports:
      - "15888:15888"
