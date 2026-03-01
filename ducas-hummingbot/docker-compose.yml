@@ -38,9 +38,9 @@ services:
    ports:
      - "15888:15888"
    volumes:
-     - "./gateway-files/conf:/home/gateway/conf"
-     - "./gateway-files/logs:/home/gateway/logs"
-     - "./certs:/home/gateway/certs"
+     - "${APP_DATA_DIR}/gateway-files/conf:/home/gateway/conf"
+     - "${APP_DATA_DIR}/gateway-files/logs:/home/gateway/logs"
+     - "${APP_DATA_DIR}/certs:/home/gateway/certs"
    environment:
      - GATEWAY_PASSPHRASE=admin
      - DEV=true

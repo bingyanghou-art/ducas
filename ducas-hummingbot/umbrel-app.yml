@@ -5,7 +5,7 @@ tagline: Free, open source crypto trading bot
 icon: https://hummingbot.org/assets/brand/logo.svg
 category: finance
 version: "2.12"
-port: 8000
+port: 15888
 description: >-
   Open source software that helps you create and deploy high-frequency crypto trading bots
 developer: Hummingbot Team
